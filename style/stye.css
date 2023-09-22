@@ -1,0 +1,594 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}   
+body{
+  
+    background-color: rgb(33, 38, 38);
+}
+.container{
+    width: 90%;
+    max-width:800px;
+    background: linear-gradient(45deg, rgb(22, 110, 147),rgb(51, 141, 90));
+    color: #fff;
+    margin: 100px auto;
+
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+}
+/* img{
+    width: 10px;
+    height: 10px;
+} */
+.search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    color: #555;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 30px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background-color: #ebfffc;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+
+
+
+}
+.search button img{
+    width: 26px;
+    height: 26px;
+}
+.temp{
+    color: aqua;
+}
+.weater_icon{
+    width: 170px;
+    margin-top: 30px;
+}
+
+.wether h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.wether h2{
+    font-size: 45px;
+    font-weight: 800;
+    margin-top: 20px;
+
+}
+.detalist{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    margin-top: 100px;
+}
+.col{
+    display: flex;
+    align-items: center;
+    text-align:left;
+}
+.col img{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.namlik, .shamol{
+    font-size: 30px;
+    font-weight: 800;
+  
+}
+p{
+    font-size: 20px;
+    font-weight: 800;
+}
+@media (max-width:1200px){
+    .weater_icon{
+        width: 170px;
+        margin-top: 30px;
+    }
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin-top: 100px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align:left;
+    }
+    .col img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 30px;
+        font-weight: 800;
+      
+    }
+}
+@media (max-width:1000px){
+    .weater_icon{
+        width: 170px;
+        margin-top: 30px;
+    }
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 50px;
+        font-weight: 600;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin-top: 100px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align:left;
+    }
+    .col img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 20px;
+        font-weight: 800;
+      
+    }
+
+}
+@media (max-width:800px){
+    .weater_icon{
+        width: 170px;
+        margin-top: 30px;
+    }
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      
+        padding: 0 100px;
+        margin-top: 100px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align:left;
+    }
+    .col img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 20px;
+        font-weight: 500;
+      
+    }
+}
+@media (max-width:700px){
+    .weater_icon{
+        width: 170px;
+        margin-top: 30px;
+    }
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+       flex-wrap: wrap;
+       gap: 10px    ;
+        padding: 0 100px;
+        margin-top: 100px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align:left;
+        row-gap: 60px;
+    }
+    .col img{
+        width: 100px;
+       row-gap: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 20px;
+        margin-left: -15px;
+        font-weight: 400;
+      
+    }
+}
+@media (max-width:600px){
+    .weater_icon{
+        width: 170px;
+        margin-top: 30px;
+        margin: auto;
+    }
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+       justify-content: space-between;
+       row-gap: 20px;
+        padding: 0 20px;
+        margin-top: 40px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align:left;
+        row-gap: 60px;
+    }
+    .col img{
+        width: 100px;
+      
+       
+    }
+    
+    .namlik, .shamol{
+        font-size: 30px;
+        font-weight: 500;
+      
+    }
+}
+@media (max-width:500px){
+    .weater_icon{
+        width: 170px;
+        margin-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: 0 100px;
+        margin-top: 100px;
+    }
+    .col{
+        display: flex;
+        align-items: center;
+        text-align:left;
+    }
+    .col img{
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 30px;
+        font-weight: 800;
+      
+    }
+}
+@media (max-width:450px){
+    .search{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background-color: #446a64;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 180px;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+    
+    
+    
+    }
+    .weater_icon{
+        width: 200px;
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    
+    .wether h1{
+        font-size: 80px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        margin-top: 50px;
+        
+        padding-left: 50px;
+    }
+    .col{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align:left;
+        position: relative;
+        
+        
+    }
+    .col img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 50px;
+        margin-right: 10px;
+        gap: 10px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 30px;
+        font-weight: 400;
+        
+    
+        
+      
+    }
+    span{
+        position: relative;
+        left: 10px;
+    }
+}
+@media (max-width:380px){
+    .search{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .search button{
+        border: 0;
+        outline: 0;
+        background-color: #446a64;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 180px;
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+    
+    
+    
+    }
+    .weater_icon{
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 30px;
+       
+    }
+
+    
+    .wether h1{
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .wether h2{
+        font-size: 45px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 100px;
+        margin-top: 100px;
+    }
+    .col{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align:left;
+    }
+    .col img{
+        display: flex;
+        
+        width: 80px;
+        margin-right: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 30px;
+        font-weight: 220;
+      
+    }
+    span{
+        position: relative;
+        left: 10px;
+    }
+}
+@media (max-width:280px){
+    .search input{
+        border: 0;
+        outline: 0;
+        background-color: #e1f0ee;
+        color: #555;
+        padding: 0px 5px;
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        flex: 1;
+        margin-right: 0px;
+        font-size: 18px;
+    
+    }
+    .search{
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .search button{
+        border: 0;
+        outline: 0;
+        background-color: #446a64;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-left: 180px;
+        width: 50px;
+        height: 30px;
+        cursor: pointer;
+    
+    
+    
+    }
+    .weater_icon{
+        width: 150px;
+        margin-top: 50px;
+        margin-left: 20px;
+       
+    }
+
+    
+    .wether h1{
+        font-size: 20px;
+        font-weight: 100;
+    }
+    .wether h2{
+        font-size: 30px;
+        font-weight: 800;
+        margin-top: 20px;
+    
+    }
+    .detalist{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 100px;
+        margin-top: 100px;
+        gap: 20px;
+    }
+    .col{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align:left;
+    }
+    .col img{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100px;
+        margin-right: 20px;
+    }
+    
+    .namlik, .shamol{
+        font-size: 30px;
+        font-weight: 800;
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
